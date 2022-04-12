@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>DoomShell</title>
+    <style>
+    h2 {
+    text-align:center;
+    color:green;
+    }
+    p {
+    text-align:center;
+    color:green;
+    }
+    </style>
+    </head>
+    <body style = "background-color:black">
+    <h2>Welcome to the Doomsday Shell</h2>
+    <p>Click the button below marked "Shell" to start using it</p>
+    <div style = "text-align:center">
+    <button style = "button" onclick = "Main()">Shell</button>
+    </div>
+    <p style = "color:grey">Copyright Doomsdaybear 2022. This is a parody of Unix, don't sue me.</p>
+
+ <!--Shell commands and other things-->
+    <script>
+    var trail_installed = "false"
+    function Main() {
+    alert("Welcome to Un- I mean Doomshell!");
+   var input = prompt("Enter commands here")
+    if(input == ".test"){
+     alert("Hello,shell!");
+     Main()
+     }
+     if(input == "Open.githubrepo"){
+     window.open("https://github.com/Doomsdaybear/DoomShell/tree/main");
+     Main()
+     }
+     if(input == "shell.say") {
+     var say = prompt("What should I say?");
+     alert(say);
+     Main()
+     }
+     if(input == "read.license"){
+     alert("There is no license on this project, use the code as you will");
+     Main()
+     }
+     if(input == "shell.close"){
+     alert("Exiting shell, have a nice day!");
+     window.close();
+     }
+     if(input == "shell.randnum"){
+     alert(Math.random());
+     Main()
+     }
+     if(input == "open.unix"){
+     alert("Your half way home, buddy");
+     Main()
+     }
+     if(input == "shell.info"){
+     alert("This shell is a parody of the Unix operating system.");
+     alert("Open source,don't worry.");
+     Main()
+     }
+     if(input == "shell.debug"){
+     alert("No bugs found, report anybugs you find in the issues column of the GitHub page.");
+     Main()
+     }
+     if(input == "game.engine"){
+     var name = "My test game"
+     alert("Welcome to DoomShell's native game engine! For a tutorial, go to the GitHub readme!");
+     function CommandReturn() {
+     prompt("Enter desired action here")
+     }
+     var cmds = prompt("Enter desired action here")
+     if(cmds == "character.create"){
+     var name = prompt("What is their name?");
+     var gender = prompt("What is the gender?");
+     var species = prompt("What is their species?");
+     var age = prompt("What is their age?");
+     var alignment = prompt("are they good,bad,or neutral?");
+     var protag = prompt("Are they the player character,antagonist, or side character?");
+     CommandReturn()
+     }
+     if(cmds == "game.rename"){
+     var rename = prompt("What would you like to rename the game? Current name: " + name);
+    var rename = name;
+     CommandReturn()
+     }
+         if(cmds == "game.nameshow"){
+         alert(name);
+             CommandReturn()
+         }
+     CommandReturn()
+     }
+     if(input == "dudo install_trail"){
+     var trail_installed = "true";
+     alert("The Michigan Trail is installing...");
+     alert("The Michigan Trail is installed!");
+     Main()
+   }
+     if(input == "run trail"){
+      if(trail_installed == "true"){
+       alert("Welcome to the Michigan Trail!");
+        var name = prompt("What is your name?");
+         alert(name + ",nice name!");
+          var skill_points = 10
+           var strength = prompt("How strong would you like to be on a scale of 1-10?")
+            if(strength == "1"){
+             skill_points = 9;
+             alert("Ok,you have 9 skill points left!");
+              var agility = prompt("What would your agility like to be on a scale of 1-9")
+               if(agility == "1"){
+               alert("Ok,you now have 8 points!")
+               }
+            }
+            if(strength == "2"){
+            alert("Ok, you now have 8 skill points!");
+             skill_points = 8
+            }
+            if(strength == "3"){
+            alert("Ok, you now have 7 skill points left!");
+             skill_points = 7
+            }
+            if(strength == "4"){
+            alert("Ok, you have 6 skill points left");
+            skill_points = 6
+            }
+            if(strength == "5"){
+            alert("Ok, you now have 5 points left")
+            skill_points = 5
+            }
+            if(strength = "6"){
+            alert("Ok, you now have 4 points left");
+           skill_points = 4
+            }
+            if(strength = "7"){
+            alert("Ok, you now have 3 points");
+            skill_points = 3
+            }
+            if(strength == "8"){
+            alert("Ok, now you have 2 points")
+            skill_points = 0
+            }
+            if(strength == "9"){
+            alert("You now have 1 skill point")
+            skill_points = 1
+            }
+            if(strength == "0"){
+            alert("You have 0 skill points")
+            skill_points = 0
+            }
+            if(skill_points = 0){
+            alert("Ok!, we can go into the adventure now!")
+            }
+            Main()
+      }
+     }
+     if(input == "Open.coolestpersonever"){
+     window.open('https://github.com/Doomsdaybear');
+     CommandReturn()
+     }
+    }
+    </script>
