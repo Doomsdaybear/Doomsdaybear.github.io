@@ -1,24 +1,67 @@
 <!DOCTYPE html>
  <html>
   <head>
-   <title>Morshu Dating Simulator</title> <!--April fools day website runover-->
+   <title>Doomsday's HELIX Casino</title>
    <style>
-    h2 {
-    text-align:center;
-    color:pink;
-    }
-    p {
-    text-align:center;
-    color:pink;
-    }
-    body {
-    background-color:purple;
-    }
-    </style>
+   h2 {
+   text-align:center;
+   color:lime;
+   }
+   h1 {
+   text-align:center;
+   color:lime;
+   }
+   p {
+   color:lime;
+   text-align:center;
+   }
+   body {
+   background-color:green;
+   }
+   </style>
    </head>
    <body>
-   <h2>MORSHU CRAVES YOUR ATTENTION</h2>
-   <p>While on your way to acquire the Wand of Gameleon, you find a cute man trying to sell you lamp oil</p>
-   <p>rope, and bombs. You think he's really cute (especially when he make outrageous prices!), so you quit your journey</p>
-   <p>And go on a date with this cute little man. Good Luck!</p>
-   <img src="Morshuwu.png" alt="MORSHU" width="500" height="600">
+    <h2>Welcome to the HELIX table!</h2>
+    <h1>This is just a troglodyte version of slots</h1>
+    <p>----------------------------------------------</p>
+    <h1>Balance</h1>
+    <p id="funds">
+    <p style="color:yellow">MULTIPLIERS</p>
+    <p>(You can only choose 1)</p>
+    <div style="text-align:center">
+    <label for="x1">
+    <input type="checkbox" id="x1" value="times1"> <p>x1</p>
+    </label>
+    <label for="x2">
+    <input type="checkbox" id="x2" va> <p>x2 (Work In Progress)</p>
+    </label>
+    <button style="button" onclick="SpinIt()">Pull the lever!</button>
+    </div>
+    <script>
+    //Javascript
+   document.getElementById("funds").innerHTML = 100
+    function SpinIt() {
+    //NOTE: USE. FUCKING. PARSEINT.
+    var doc = document.getElementById("funds").innerHTML
+    if (document.getElementById("x1").checked = true) {
+    var rand = Math.floor(Math.random()*3);
+    if (rand == 0) {
+    alert("-25");
+    document.getElementById("funds").innerHTML = doc - 25
+     }
+     if (rand == 1) {
+    alert("-25");
+    document.getElementById("funds").innerHTML = document.getElementById("funds").innerHTML = doc - 25
+     }
+      if (rand == 2) {
+    alert("+25");
+    document.getElementById("funds").innerHTML = parseInt(doc,10) + 25;
+     }
+     if (rand == 3) {
+    alert("+25");
+   document.getElementById("funds").innerHTML = parseInt(doc,10) + 25;
+     }
+      } 
+      
+        }
+    </script>
