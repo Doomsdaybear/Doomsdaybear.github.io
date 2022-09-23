@@ -1,7 +1,7 @@
 <!DOCTYPE html>
  <html>
   <head>
-   <title>Doomsday's Chad Slots</title>
+   <title>Doomsday's HELIX Casino</title>
    <style>
    h2 {
    text-align:center;
@@ -20,25 +20,38 @@
    }
    </style>
    </head>
-   <body>
-    <h2>Welcome to the Chad Slots!</h2>
-    <h1>This is just a troglodyte version of slots</h1>
-    <p>----------------------------------------------</p>
-    <h1>Balance</h1>
+   <body id="body">
+    <h2 id="tango">Welcome to the HELIX table!</h2>
+    <h1 id="csgo">This is just a troglodyte version of slots</h1>
+    <h1 id="ohnoes"><h1>
+    <p id="foxtrot">----------------------------------------------</p>
+    <h1 id="testr">Balance</h1>
     <p id="funds">
-    <p style="color:yellow">MULTIPLIERS</p>
-    <p>(You can only choose 1)</p>
+    <p style="color:yellow" id = "weirdtag">MULTIPLIERS</p>
+    <p id="onlyone">(You can only choose 1)</p>
     <div style="text-align:center">
     <label for="x1">
-    <input type="checkbox" id="x1" value="times1"> <p>x1</p>
+    <input type="checkbox" id="x1" value="times1"> <p id="times1">x1</p>
     </label>
     <label for="x2">
-    <input type="checkbox" id="x2" va> <p>x2 (Work In Progress)</p>
+    <input type="checkbox" id="x2" va> <p id="times2">x2 (Work In Progress)</p>
     </label>
     <button style="button" onclick="SpinIt()">Pull the lever!</button>
+    <p id="bored">Bored of this? We knew you would be, so click below and start your investing journey!</p>
+    <button style="button" onclick="redirection()">Make your investments!</button>
+    </div>
+    <div style="text-align:center">
+    <p id="shop">Shop</p>
+    <p id="moreline">
+    <p id="100">100 points:</p>
+    <p id="gold">Gold theme</p>
+    <button style="button" onclick="Goldify()">GOLD</button>
     </div>
     <script>
     //Javascript
+    if(document.getElementById("funds").innerHTML < 0) {
+    document.getElementById("ohnoes").innerHTML = "Oh no! You are bankrupt!";
+    }
    document.getElementById("funds").innerHTML = 100
     function SpinIt() {
     //NOTE: USE. FUCKING. PARSEINT.
@@ -62,6 +75,30 @@
    document.getElementById("funds").innerHTML = parseInt(doc,10) + 25;
      }
       } 
-      
+      function redirection() {
+      window.open("doomsdaybear.github.io/investorsdream");
+      }
         }
+      function Goldify() {
+       
+      if (document.getElementById("funds").innerHTML > 99) {
+      document.body.style.backgroundColor = 'gold';
+      document.getElementById("testr").style.color = "brown";
+      document.getElementById("csgo").style.color = "brown";
+      document.getElementById("tango").style.color = "brown";
+      document.getElementById("funds").style.color = "brown";
+      document.getElementById("weirdtag").style.color = "brown";
+      document.getElementById("foxtrot").style.color = "brown";
+      document.getElementById("onlyone").style.color = "brown";
+      document.getElementById("times1").style.color = "brown";
+      document.getElementById("times2").style.color = "brown";
+      document.getElementById("bored").style.color = "brown";
+      document.getElementById("shop").style.color = "brown";
+      document.getElementById("100").style.color = "brown";
+      document.getElementById("gold").style.color = "brown";
+      document.getElementById("funds").innerHTML = document.getElementById("funds").innerHTML - 100
+      }
+      }
     </script>
+    </body>
+     </html>
