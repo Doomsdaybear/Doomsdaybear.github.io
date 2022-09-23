@@ -21,7 +21,7 @@
    </style>
    </head>
    <body id="body">
-    <h2 id="tango">Welcome to the Chad table!</h2>
+    <h2 id="tango">Welcome to the Chad slots!</h2>
     <h1 id="csgo">This is just a troglodyte version of slots</h1>
     <h1 id="ohnoes"><h1>
     <p id="foxtrot">----------------------------------------------</p>
@@ -42,10 +42,13 @@
     </div>
     <div style="text-align:center">
     <p id="shop">Shop</p>
-    <p id="moreline">
+    <p id="moreline">---------</p>
     <p id="100">100 points:</p>
     <p id="gold">Gold theme</p>
     <button style="button" onclick="Goldify()">GOLD</button>
+    <p id = "100again">100 points:</p>
+    <p id="cookie">Cookie theme</p>
+    <button style="button" onclick="Cookiefy()">Nom</button>
     </div>
     <script>
     //Javascript
@@ -96,9 +99,53 @@
       document.getElementById("shop").style.color = "brown";
       document.getElementById("100").style.color = "brown";
       document.getElementById("gold").style.color = "brown";
+      document.getElementById("100again").style.color = "brown";
+      document.getElementById("cookie").style.color = "brown";
+      document.getElementById("funds").innerHTML = document.getElementById("funds").innerHTML - 100
+       }
+      }
+      function Cookiefy() {
+        if (document.getElementById("funds").innerHTML > 99) {
+      document.body.style.backgroundColor = 'chocolate';
+      document.getElementById("testr").style.color = "black";
+      document.getElementById("csgo").style.color = "black";
+      document.getElementById("tango").style.color = "black";
+      document.getElementById("funds").style.color = "black";
+      document.getElementById("weirdtag").style.color = "black";
+      document.getElementById("foxtrot").style.color = "black";
+      document.getElementById("onlyone").style.color = "black";
+      document.getElementById("times1").style.color = "black";
+      document.getElementById("times2").style.color = "black";
+      document.getElementById("bored").style.color = "black";
+      document.getElementById("shop").style.color = "black";
+      document.getElementById("100").style.color = "black";
+      document.getElementById("gold").style.color = "black";
+      document.getElementById("100again").style.color = "black";
+      document.getElementById("cookie").style.color = "black";
       document.getElementById("funds").innerHTML = document.getElementById("funds").innerHTML - 100
       }
+       }
+        function Cakeify() {
+        if (document.getElementById("funds").innerHTML > 99) {
+      document.body.style.backgroundColor = 'white';
+      document.getElementById("testr").style.color = "purple";
+      document.getElementById("csgo").style.color = "blue";
+      document.getElementById("tango").style.color = "red";
+      document.getElementById("funds").style.color = "lime";
+      document.getElementById("weirdtag").style.color = "cyan";
+      document.getElementById("foxtrot").style.color = "";
+      document.getElementById("onlyone").style.color = "black";
+      document.getElementById("times1").style.color = "black";
+      document.getElementById("times2").style.color = "black";
+      document.getElementById("bored").style.color = "black";
+      document.getElementById("shop").style.color = "black";
+      document.getElementById("100").style.color = "black";
+      document.getElementById("gold").style.color = "black";
+      document.getElementById("100again").style.color = "black";
+      document.getElementById("cookie").style.color = "black";
+      document.getElementById("funds").innerHTML = document.getElementById("funds").innerHTML - 100
       }
+       }
     </script>
     </body>
      </html>
