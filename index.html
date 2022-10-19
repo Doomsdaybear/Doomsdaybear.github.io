@@ -1,151 +1,34 @@
 <!DOCTYPE html>
  <html>
-  <head>
-   <title>Doomsday's Chad Casino</title>
-   <style>
-   h2 {
-   text-align:center;
-   color:lime;
-   }
-   h1 {
-   text-align:center;
-   color:lime;
-   }
-   p {
-   color:lime;
-   text-align:center;
-   }
-   body {
-   background-color:green;
-   }
-   </style>
-   </head>
-   <body id="body">
-    <h2 id="tango">Welcome to the Chad slots!</h2>
-    <h1 id="csgo">This is just a troglodyte version of slots</h1>
-    <h1 id="ohnoes"><h1>
-    <p id="foxtrot">----------------------------------------------</p>
-    <h1 id="testr">Balance</h1>
-    <p id="funds">
-    <p style="color:yellow" id = "weirdtag">MULTIPLIERS</p>
-    <p id="onlyone">(You can only choose 1)</p>
-    <div style="text-align:center">
-    <label for="x1">
-    <input type="checkbox" id="x1" value="times1"> <p id="times1">x1</p>
-    </label>
-    <label for="x2">
-    <input type="checkbox" id="x2" va> <p id="times2">x2 (Work In Progress)</p>
-    </label>
-    <button style="button" onclick="SpinIt()">Pull the lever!</button>
-    <p id="bored">Bored of this? We knew you would be, so click below and start your investing journey!</p>
-    <button style="button" onclick="redirection()">Make your investments!</button>
-    </div>
-    <div style="text-align:center">
-    <p id="shop">Shop</p>
-    <p id="moreline">---------</p>
-    <p id="100">100 points:</p>
-    <p id="gold">Gold theme</p>
-    <button style="button" onclick="Goldify()">GOLD</button>
-    <p id = "100again">100 points:</p>
-    <p id="cookie">Cookie theme</p>
-    <button style="button" onclick="Cookiefy()">Nom</button>
-    </div>
-    <script>
-    //Javascript
-    if(document.getElementById("funds").innerHTML < 0) {
-    document.getElementById("ohnoes").innerHTML = "Oh no! You are bankrupt!";
-    }
-   document.getElementById("funds").innerHTML = 100
-    function SpinIt() {
-    //NOTE: USE. FUCKING. PARSEINT.
-    var doc = document.getElementById("funds").innerHTML
-    if (document.getElementById("x1").checked = true) {
-    var rand = Math.floor(Math.random()*3);
-    if (rand == 0) {
-    alert("-25");
-    document.getElementById("funds").innerHTML = doc - 25
-     }
-     if (rand == 1) {
-    alert("-25");
-    document.getElementById("funds").innerHTML = document.getElementById("funds").innerHTML = doc - 25
-     }
-      if (rand == 2) {
-    alert("+25");
-    document.getElementById("funds").innerHTML = parseInt(doc,10) + 25;
-     }
-     if (rand == 3) {
-    alert("+25");
-   document.getElementById("funds").innerHTML = parseInt(doc,10) + 25;
-     }
-      } 
-      function redirection() {
-      window.open("doomsdaybear.github.io/investorsdream");
-      }
-        }
-      function Goldify() {
-       
-      if (document.getElementById("funds").innerHTML > 99) {
-      document.body.style.backgroundColor = 'gold';
-      document.getElementById("testr").style.color = "brown";
-      document.getElementById("csgo").style.color = "brown";
-      document.getElementById("tango").style.color = "brown";
-      document.getElementById("funds").style.color = "brown";
-      document.getElementById("weirdtag").style.color = "brown";
-      document.getElementById("foxtrot").style.color = "brown";
-      document.getElementById("onlyone").style.color = "brown";
-      document.getElementById("times1").style.color = "brown";
-      document.getElementById("times2").style.color = "brown";
-      document.getElementById("bored").style.color = "brown";
-      document.getElementById("shop").style.color = "brown";
-      document.getElementById("100").style.color = "brown";
-      document.getElementById("gold").style.color = "brown";
-      document.getElementById("100again").style.color = "brown";
-      document.getElementById("cookie").style.color = "brown";
-      document.getElementById("funds").innerHTML = document.getElementById("funds").innerHTML - 100
-       }
-      }
-      function Cookiefy() {
-        if (document.getElementById("funds").innerHTML > 99) {
-      document.body.style.backgroundColor = 'chocolate';
-      document.getElementById("testr").style.color = "black";
-      document.getElementById("csgo").style.color = "black";
-      document.getElementById("tango").style.color = "black";
-      document.getElementById("funds").style.color = "black";
-      document.getElementById("weirdtag").style.color = "black";
-      document.getElementById("foxtrot").style.color = "black";
-      document.getElementById("onlyone").style.color = "black";
-      document.getElementById("times1").style.color = "black";
-      document.getElementById("times2").style.color = "black";
-      document.getElementById("bored").style.color = "black";
-      document.getElementById("shop").style.color = "black";
-      document.getElementById("100").style.color = "black";
-      document.getElementById("gold").style.color = "black";
-      document.getElementById("100again").style.color = "black";
-      document.getElementById("cookie").style.color = "black";
-      document.getElementById("funds").innerHTML = document.getElementById("funds").innerHTML - 100
-      }
-       }
-        function Cakeify() {
-        if (document.getElementById("funds").innerHTML > 99) {
-      document.body.style.backgroundColor = 'white';
-      document.getElementById("testr").style.color = "purple";
-      document.getElementById("csgo").style.color = "blue";
-      document.getElementById("tango").style.color = "red";
-      document.getElementById("funds").style.color = "lime";
-      document.getElementById("weirdtag").style.color = "cyan";
-      document.getElementById("foxtrot").style.color = "";
-      document.getElementById("onlyone").style.color = "black";
-      document.getElementById("times1").style.color = "black";
-      document.getElementById("times2").style.color = "black";
-      document.getElementById("bored").style.color = "black";
-      document.getElementById("shop").style.color = "black";
-      document.getElementById("100").style.color = "black";
-      document.getElementById("gold").style.color = "black";
-      document.getElementById("100again").style.color = "black";
-      document.getElementById("cookie").style.color = "black";
-      document.getElementById("funds").innerHTML = document.getElementById("funds").innerHTML - 100
-      }
-       }
-    </script>
-    </body>
-     </html>
+    <head>
+        <title>SelfTalk</title>
+        <style>
+            h2 {
+                text-align:center;
+                color:red;
+            }
+
+            p {
+                text-align:center;
+                color:red;
+            }
+
+            body {
+                background-image: linear-gradient(to right,cyan, blue);
+            }
+            </style>
+        </head>
+        <body>
+            <h2>Type to talk to yourself.</h2>
+            <p>----------------------------</p>
+            <div style="text-align:center">
+            <input type="text" id="msg"><button style="button" onclick="dodat()">Send</button><br>
+            <p id="showit" style="color:white"></p>
+            </div>
+        <script>
+            function dodat() {
+                var getdat = document.getElementById("msg").value;
+                 document.getElementById("showit").innerHTML = "You:" + getdat;
+            }
+        </script>
+        </body>
