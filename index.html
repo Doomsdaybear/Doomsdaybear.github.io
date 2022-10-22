@@ -1,16 +1,16 @@
 <!DOCTYPE html>
  <html>
     <head>
-        <title>SelfTalk</title>
+        <title>Online Notebook</title>
         <style>
             h2 {
                 text-align:center;
-                color:red;
+                color:white;
             }
 
             p {
                 text-align:center;
-                color:red;
+                color:white;
             }
 
             body {
@@ -19,16 +19,21 @@
             </style>
         </head>
         <body>
-            <h2>Type to talk to yourself.</h2>
+            <h2>Type to write down your stuff.</h2>
             <p>----------------------------</p>
-            <div style="text-align:center">
+            <div style="text-align:center" id="contain">
             <input type="text" id="msg"><button style="button" onclick="dodat()">Send</button><br>
-            <p id="showit" style="color:white"></p>
+            
             </div>
         <script>
             function dodat() {
+                var dividend = document.getElementById("contain");
+                const newb = document.createElement("p");
+                  newb.innerHTML = "This is a paragraph.";
+                  document.getElementById("contain").appendChild(newb);
+                    var user = Math.floor(Math.random() * 500000);
                 var getdat = document.getElementById("msg").value;
-                 document.getElementById("showit").innerHTML = "You:" + getdat;
+                 newb.innerHTML = user + ": " + getdat;
             }
         </script>
         </body>
