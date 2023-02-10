@@ -16,27 +16,18 @@
             body {
                 background-image: linear-gradient(to right,black, lime);
             }
+            @keyframes slide {
+             0% {top: 0px;}
+             100% {top: 100px;}
+         }
+            .pfp {
+          animation: slide 3s 1   
+         }
             </style>
         </head>
         <body>
          <div style="text-align:center">
-                     <img src="Untitled_document-removebg-preview.png" alt="Logo" width="500 height="450">
+                     <img src="191b5efd891e3659fc3964b767bc1d046eb9be64_2_120x120-modified.png" alt="Logo" width="500 height="450" class = "pfp">
          </div>
             <h2>Doomsdaybear: Full-Stack Developer</h2>
-            <p>----------------------------</p>
-            <div style="text-align:center" id="contain">
-            <input type="text" id="msg"><button style="button" onclick="dodat()">Send</button><br>
             
-            </div>
-        <script>
-            function dodat() {
-                var dividend = document.getElementById("contain");
-                const newb = document.createElement("p");
-                  newb.innerHTML = "This is a paragraph.";
-                  document.getElementById("contain").appendChild(newb);
-                    var user = Math.floor(Math.random() * 500000);
-                var getdat = document.getElementById("msg").value;
-                 newb.innerHTML = user + ": " + getdat;
-            }
-        </script>
-        </body>
